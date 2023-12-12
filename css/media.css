@@ -1,0 +1,588 @@
+@media (max-width: 1986px) {
+  .nav .nav__close {
+    display: none;
+  }
+  .nav .nav__menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1900px) {
+  .nav .nav__close {
+    display: none;
+  }
+  .nav .nav__menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1780px) {
+  .nav .nav__close {
+    display: none;
+  }
+  .nav .nav__menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1140px) {
+  .films__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 540px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .section__title {
+    margin: 30px 0;
+  }
+  .nav .nav__close {
+    display: none;
+  }
+  .nav .nav__menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header {
+    height: max-content;
+  }
+  .header__content {
+    height: 600px;
+  }
+  .nav .nav__close {
+    display: none;
+    overflow: hidden;
+  }
+  .nav .nav__menu {
+    display: none;
+    overflow: hidden;
+  }
+  .collections__content {
+    display: flex;
+    gap: 20px;
+  }
+  .films__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .films {
+    padding: 50px 0 60;
+  }
+  .section__title {
+    margin-top: 0;
+  }
+  .films__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 0 auto;
+  }
+  .collections__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    justify-items: center;
+    gap: 50px;
+  }
+  .series__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .nav {
+    padding: 0;
+  }
+  .nav__info {
+    padding: 10px 0;
+  }
+  .nav__info-list {
+    position: fixed;
+    flex-direction: column;
+    background-color: var(--dark);
+    width: 100%;
+    height: 100vh;
+    top: -1000px;
+    left: 0;
+    align-items: center;
+    padding-top: 50px;
+    transition: .5s;
+  }
+  .nav .nav__menu {
+    display: block;
+  }
+  .nav .nav__close {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .nav .nav__info-list {
+    display: flex;
+    gap: 30px;
+  }
+  .nav .nav__info-link:hover::after {
+    bottom: -15px;
+    opacity: 1;
+  }
+  #check:checked ~ .nav__info-list {
+    top: -85px;
+  }
+  .header__content {
+    height: 550px;
+  }
+  .section__title {
+    margin: 35px 0;
+    font-size: 30px;
+  }
+  .collections {
+    padding: 35px 0;
+  }
+  .collections__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .series__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .films {
+    padding: 35px 0;
+  }
+}
+
+@media (max-width: 700px) {
+  /* HEADER TOP */
+  .header__top {
+    padding: 10px 0;
+  }
+  .header__top .header__top-icon {
+    width: 40px;
+  }
+  .header__top-text {
+    font-size: 15px;
+    line-height: 120%;
+  }
+
+  /* HEADER */
+  .header__content {
+    height: 480px;
+  }
+  .header__title {
+    font-size: 55px;
+    line-height: 100%;
+    text-align: center;
+  }
+  .header__text {
+    margin: 30px auto;
+    line-height: 130%;
+    text-align: center;
+  }
+  .header__btns {
+    justify-content: center;
+    gap: 20px;
+  }
+  .header__btn {
+    padding: 17px 45px;
+  }
+
+  /* NAV */
+  .nav {
+    padding: 15px 0;
+  }
+  .nav_logo img {
+    width: 85px;
+  }
+  .nav__info-logo {
+    font-size: 15px;
+  }
+
+  /* FILMS */
+  .films__cards::-webkit-scrollbar {
+    height: 5px;
+  }
+  .films__cards::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5px;
+  }
+  .films__cards {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+  }
+  .films__card {
+    flex-shrink: 0;
+    width: 50%;
+  }
+  .films__card-play {
+    margin-top: 30px;
+  }
+  .films__card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* COLLECTION */
+  .collections__content::-webkit-scrollbar {
+    height: 5px;
+  }
+  .collections__content::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5px;
+  }
+  .collections__content {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+  }
+  .collections__item {
+    flex-shrink: 0;
+  }
+
+  /* SERIES */
+  .series__cards::-webkit-scrollbar {
+    height: 5px;
+  }
+  .series__cards::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5px;
+  }
+  .series__cards {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+  }
+
+  .series__card {
+    width: 400px;
+    flex-shrink: 0;
+  }
+
+  /* FOOTER */
+  .footer__content {
+    gap: 10px;
+  }
+  .footer__socials {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* HEADER */
+  .header__title {
+    font-size: 45px;
+  }
+  .header__text {
+    font-size: 15px;
+  }
+  .header__btn {
+    padding: 15px 40px;
+  }
+  .section__title {
+    margin: 30px 0;
+    font-size: 25px;
+  }
+
+  /* FILMS */
+  .films__cards::-webkit-scrollbar {
+    height: 5px;
+  }
+  .films__cards::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5px;
+  }
+  .films__cards {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+  }
+  .films__card {
+    flex-shrink: 0;
+  }
+
+  /* TRAILER */
+  .trailer__text {
+    font-size: 16px;
+    margin: 45px 0 47px;
+    text-align: center;
+    line-height: 20px;
+  }
+  .trailer__content img {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .trailer__content .header__btn {
+    margin: 0 auto;
+  }
+
+  /* SERIES */
+  .series__cards::-webkit-scrollbar {
+    height: 5px;
+  }
+  .series__cards::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5px;
+  }
+  .series__cards {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+  }
+  .series__card {
+    flex-shrink: 0;
+    width: 300px;
+  }
+  .series__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+
+  /* COLLECTION */
+  .collections__content::-webkit-scrollbar {
+    height: 5px;
+  }
+  .collections__content::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5px;
+  }
+  .collections__content {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+  }
+  .collections__item {
+    flex-shrink: 0;
+  }
+
+  /* FOOTER */
+  .footer__content {
+    flex-direction: column;
+  }
+  .footer__text {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* HEADER */
+  .header__title {
+    font-size: 35px;
+  }
+  .header__text {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  .header__btn {
+    padding: 12px 35px;
+    font-size: 13px;
+  }
+
+  /* NAV */
+  .nav {
+    padding: 0;
+  }
+  .nav__info {
+    padding: 8px 0;
+  }
+
+  /* SERIES */
+  .series__cards {
+    gap: 10px;
+  }
+  .series__title {
+    font-size: 35px;
+  }
+  .series__text {
+    font-size: 15px;
+  }
+
+  /* TRAILER */
+  .trailer__text {
+    font-size: 15px;
+    margin: 40px 0 42px;
+  }
+
+  /* FILMS */
+  .films__cards {
+    gap: 10px;
+  }
+
+  .films__card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* COLLECTION */
+  .collections__content {
+    gap: 10px;
+  }
+
+  /* FOOTER */
+  .footer__content {
+    flex-direction: column;
+  }
+  .footer__socials {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* HEADER TOP */
+  .header__top img {
+    width: 30px;
+  }
+  .header__top-text {
+    font-size: 13px;
+    line-height: 120%;
+  }
+  .header__content {
+    height: 350px;
+  }
+  .header__title {
+    font-size: 28px;
+  }
+  .header__btns {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 135px;
+    margin: 0 auto;
+  }
+
+  /* NAV */
+  .nav {
+    padding: 0;
+  }
+  .nav__info {
+    padding: 5px 0;
+  }
+  .nav__info-logo .nav_logo {
+    width: 70px;
+  }
+  .nav__info-logo {
+    font-size: 15px;
+  }
+  .nav__menu {
+    width: 25px;
+  }
+
+  /* FILMS */
+  .films__card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* SERIES */
+  .series__content {
+    padding: 20px 0;
+  }
+  .series__title {
+    text-align: center;
+    font-size: 28px;
+  }
+  .series__text {
+    width: 260px;
+    font-size: 15px;
+  }
+
+  /* TRAILER */
+  .trailer__content {
+    padding: 30px 0;
+  }
+  .trailer__content img {
+    width: 240px;
+  }
+  .trailer__text {
+    margin: 20px 0;
+  }
+
+  /* FOOTER */
+  .footer__content {
+    flex-direction: column;
+  }
+  .footer__socials {
+    gap: 20px;
+  }
+  .footer__text {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 300px) {
+  /* HEADER */
+  .header__btns {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 135px;
+    margin: 0 auto;
+  }
+  .header__text {
+    font-size: 12px;
+  }
+
+  /* FILMS */
+  .films__card-title {
+    font-size: 18px;
+  }
+
+  /* TRAILER */
+  .trailer__content img {
+    width: 220px;
+  }
+  .trailer__text {
+    font-size: 12px;
+  }
+
+  /* SERIES */
+  .series__content {
+    padding: 30px 0;
+    height: 360px;
+  }
+  .series__title {
+    text-align: center;
+    font-size: 25px;
+  }
+  .series__text {
+    width: 220px;
+    font-size: 12px;
+  }
+
+  /* FOOTER */
+  .footer__content {
+    text-align: center;
+  }
+  .footer__link img {
+    width: 90px;
+  }
+  .footer__text {
+    font-size: 12px;
+  }
+}
